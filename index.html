@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gopisaroja G | Portfolio</title>
 
+<style>
+:root {
+  --card-color: #2a5298;
+  --text-color: white;
+}
+
+body.light {
+  --card-color: white;
+  --text-color: #222;
+  background: #f4f4f4;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#1e3c72,#2a5298);
+  color: var(--text-color);
+  text-align: center;
+  transition: 0.4s;
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 40px 20px;
+}
+
+img.profile {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 4px solid var(--text-color);
+}
+
+.section {
+  margin-top: 50px;
+}
+
+.card {
+  background: var(--card-color);
+  margin: 12px auto;
+  padding: 18px;
+  width: 85%;
+  max-width: 420px;
+  border-radius: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+  background: linear-gradient(45deg,#ff7e5f,#feb47b);
+  color: white;
+  font-weight: bold;
+}
+
+.toggle-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: black;
+  color: white;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<button class="toggle-btn" onclick="toggleMode()">🌙 Toggle</button>
+
+<div class="container">
+
+<img src="profile.jpg" alt="Profile Photo" class="profile">
+
+<h1>Hi, I'm Gopisaroja G 👋</h1>
+<p>First Year Computer Science Engineering Student</p>
+<p>C & Python | Aspiring Software Developer</p>
+
+<div class="section">
+<h2>Projects</h2>
+
+<a href="https://github.com/Gopisaroja" target="_blank">
+<div class="card">
+<strong>My Projects</strong>
+<p>Click to view my GitHub repositories.</p>
+</div>
+</a>
+
+</div>
+
+<div class="section">
+<h2>Skills</h2>
+<div class="card">C Programming</div>
+<div class="card">Python</div>
+<div class="card">HTML & CSS</div>
+<div class="card">Git & GitHub</div>
+</div>
+
+<div class="section">
+<h2>Coding Profiles</h2>
+
+<a href="https://www.linkedin.com/in/gopisaroja-g-8484363a1" target="_blank">
+<div class="card">LinkedIn</div>
+</a>
+
+<a href="https://github.com/Gopisaroja" target="_blank">
+<div class="card">GitHub</div>
+</a>
+
+</div>
+
+<div class="section">
+<h2>Contact</h2>
+<a href="mailto:gopisaraja_bcs29@mepcoeng.ac.in">
+<div class="card">
+Email: gopisaraja_bcs29@mepcoeng.ac.in
+</div>
+</a>
+</div>
+
+<footer>
+© 2026 Gopisaroja G
+</footer>
+
+</div>
+
+<script>
+function toggleMode() {
+  document.body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>
